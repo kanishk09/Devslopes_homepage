@@ -1,0 +1,255 @@
+/*######## defaults #############*/
+nav, header, footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin:0;
+    background: bisque;
+}
+.container{
+    width: 100%;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom: 4%;     
+}
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.css-selector {
+font-family: 'Font Name', Piedra;
+}
+/*########## nav bar #################*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color: lightgray;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+    font-family: Piedra;
+}
+ul.topnav li.topnavright {
+    list-style: none;
+    float: right; 
+    padding-right: 30px;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 18px;
+    text-align: center;
+    padding: 14px;
+    color: #666;
+}
+ul.topnav li a:hover{
+    background: white;
+} 
+ul.topnav li.dropdown{
+     display: none;
+}
+/*########## CUSTOM STYLES #############*/
+
+#sec1{
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,162,181,1) 0%, rgba(11,110,103,1) 49%, rgba(55,70,71,1) 97%, rgba(136,138,139,1) 100%);
+    
+}
+.video{
+}
+.yeet{
+    color:papayawhip;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    font-family: Piedra;
+}
+.input1{
+      margin-left: 30%;
+}
+.input2{
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+.rightsidecol{
+    color:darkgray;
+    margin-left:30%;
+    font-size: 30px;
+    font-family: Piedra;
+}
+.leftsidecol{
+    margin-left: 30%;
+}
+input[type="text"]{
+    font-size: 20px;
+    width:350px;
+    min-width: 100px;
+    padding:5px;
+    margin-left: 0%;
+    border-radius: 7px;
+}
+input[type="password"]{
+    font-size: 20px;
+    width: 350px;
+    min-width: 100px;
+    padding:5px;
+    margin-left:0%;
+    border-radius: 7px;
+}
+.hone{
+    color: darkolivegreen;
+    font-family: Piedra;
+    text-align: center;
+    font-size: 60px;
+}
+div.box{
+    text-align: center; 
+    box-shadow: 0px 0px 7px 2px rgba(180,130,10,1);
+    margin: 24px;
+    padding: 25px 24px 20px 24px;
+    border-radius: 7px;
+}
+
+div.icon{
+    width: 100%;
+}
+label{
+    font-family: Piedra;
+    color: darkred;
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    line-height: 1.2;
+    font-size: 28px;
+    font-family: Piedra;
+    color: chocolate;
+}
+button{
+    display:block;
+    margin: 5px;
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: 7px;
+    background-color:saddlebrown;
+    text-align: center;
+    font-size: 32px;
+    padding: 15px 60px;
+    font-weight: 700;
+}
+button.b1{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+article p{
+    font-size: 28px;
+    padding:20px;
+    line-height: 25px;
+}
+.iosicon img{
+    display: block;
+    margin: auto;
+    box-shadow: -1px -1px 10px 2px rgba(0,0,0,.35), 1px 1px 7px 2px rgba(0,0,0,.35);
+}
+footer.footsie{
+    background: gray;
+    font-family: Piedra;
+    color: white;
+    padding-left: 12%;
+}
+footer.footsie h1{
+    font-size: 35px;
+}
+footer.footsie ul{
+    list-style: none;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 0px;
+    line-height: 1.7;
+}
+
+/*############ MOBILE ##################*/
+
+@media screen and (max-width:680px){ 
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdown{
+        display: block;
+        float: right;
+    }
+     
+    ul.topnav.respond li.dropdown{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    ul.topnav.respond{
+        position: relative; 
+    }
+    ul.topnav.respond li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.respond  li a{
+        display: block;
+        text-align: left;
+    }
+    .col-7, .col6, .col-4 {
+        width:100%;
+        margin:0;
+    }
+    .rightsidecol iframe.xyz{
+        height: 250px;
+        width: 380px;
+        border-radius: 5px;
+        overflow: 0%;
+    }
+    div.leftsidecol , div.rightsidecol{
+        margin-left:15%;
+    }
+    .iosicon img{
+        margin: 20px;
+    }
+    div.foot{
+        width: 50%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
